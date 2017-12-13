@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B4B97ED01FE149B700694ED2 /* RNPassKit.h in Headers */ = {isa = PBXBuildFile; fileRef = B4B97ECE1FE149B700694ED2 /* RNPassKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4B97EDE1FE18D5A00694ED2 /* RNPassKitBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B97EDC1FE18D5A00694ED2 /* RNPassKitBridge.m */; };
+		B4B97EDF1FE18D5A00694ED2 /* RNPassKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B97EDD1FE18D5A00694ED2 /* RNPassKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B4B97ECB1FE149B700694ED2 /* RNPassKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RNPassKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4B97ECE1FE149B700694ED2 /* RNPassKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNPassKit.h; sourceTree = "<group>"; };
 		B4B97ECF1FE149B700694ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4B97EDC1FE18D5A00694ED2 /* RNPassKitBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPassKitBridge.m; sourceTree = "<group>"; };
+		B4B97EDD1FE18D5A00694ED2 /* RNPassKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNPassKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +48,8 @@
 		B4B97ECD1FE149B700694ED2 /* RNPassKit */ = {
 			isa = PBXGroup;
 			children = (
-				B4B97ECE1FE149B700694ED2 /* RNPassKit.h */,
+				B4B97EDD1FE18D5A00694ED2 /* RNPassKit.swift */,
+				B4B97EDC1FE18D5A00694ED2 /* RNPassKitBridge.m */,
 				B4B97ECF1FE149B700694ED2 /* Info.plist */,
 			);
 			path = RNPassKit;
@@ -59,7 +62,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4B97ED01FE149B700694ED2 /* RNPassKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +97,7 @@
 				TargetAttributes = {
 					B4B97ECA1FE149B700694ED2 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +134,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4B97EDE1FE18D5A00694ED2 /* RNPassKitBridge.m in Sources */,
+				B4B97EDF1FE18D5A00694ED2 /* RNPassKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +258,7 @@
 		B4B97ED41FE149B700694ED2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +272,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.domik.RNPassKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +281,7 @@
 		B4B97ED51FE149B700694ED2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
