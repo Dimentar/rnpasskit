@@ -18,7 +18,7 @@ class RNPassKit: RCTEventEmitter {
 extension RNPassKit {
     override func constantsToExport() -> [AnyHashable : Any]! {
         return [
-            "canMakePayments": PKPaymentAuthorizationViewController.canMakePayments(),
+            "canMakePayments" : PKPaymentAuthorizationViewController.canMakePayments(),
             "PKPaymentNetwork" : [ PKPaymentNetwork.amex, PKPaymentNetwork.masterCard, PKPaymentNetwork.visa ]
         ]
     }
@@ -32,17 +32,11 @@ extension RNPassKit {
     }
 }
 
-extension RNPassKit {
-    func applePayButton() {
-        guard PKPaymentAuthorizationViewController.canMakePayments() else { return }
-        
-        let supportedPaymentNetworks = [PKPaymentNetwork.visa, PKPaymentNetwork.masterCard, PKPaymentNetwork.amex]
-        
-        if PKPaymentAuthorizationViewController.canMakePayments(usingNetworks: supportedPaymentNetworks) {
-            _ = PKPaymentButton(paymentButtonType: .buy, paymentButtonStyle: .black)
-        } else {
-            _ = PKPaymentButton(paymentButtonType: .setUp, paymentButtonStyle: .black)
-        }
+extension RNPassKit {    
+    @objc
+    func canMakePayments(_ supportedPaymentNetworks: [PKPaymentNetwork], callback: RCTResponseSenderBlock) {
+        let can = PKPaymentAuthorizationViewController.canMakePayments(usingNetworks: supportedPaymentNetworks)
+        callback([NSNull(), can])
     }
     
     @objc(prepareRequest:callback:)

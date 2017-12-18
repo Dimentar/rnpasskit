@@ -13,6 +13,8 @@
 
 @interface RCT_EXTERN_MODULE(RNPassKit, RCTEventEmitter)
 
+RCT_EXTERN_METHOD(canMakePaymentsUsingNetworks:(NSArray<PKPaymentNetwork> *)supportedNetworks callback:(RCTResponseSenderBlock)callback)
+
 RCT_EXTERN_METHOD(openPaymentSetup)
 
 RCT_EXTERN_METHOD(prepareRequest:(NSDictionary *)options callback:(RCTResponseSenderBlock)callback)
