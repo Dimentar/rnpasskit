@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react'
 import {StyleProp, TextStyle} from 'react-native'
 
 export type RNPaymentButtonType = 'plain' | 'buy' | 'setUp' | 'inStore' | 'donate'
@@ -15,3 +15,10 @@ export interface RNPaymentButtonProps {
 }
 
 export class RNPaymentButton extends React.Component<RNPaymentButtonProps, any> {}
+
+export class RNPassKit {
+    canMakePayments: Boolean;
+    prepareRequest: Function;
+    present: Function;
+    openPaymentSetup: Function;
+}
