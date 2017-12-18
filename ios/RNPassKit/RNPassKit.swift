@@ -32,8 +32,8 @@ extension RNPassKit {
 }
 
 extension RNPassKit {
-    @objc(canMakePayments:callback:)
-    func canMakePayments(_ supportedPaymentNetworks: [PKPaymentNetwork], callback: RCTResponseSenderBlock) {
+    @objc(canMakePaymentsUsingNetworks:callback:)
+    func canMakePaymentsUsingNetworks(_ supportedPaymentNetworks: [PKPaymentNetwork], callback: RCTResponseSenderBlock) {
         let can = PKPaymentAuthorizationViewController.canMakePayments(usingNetworks: supportedPaymentNetworks)
         callback([NSNull(), can])
     }
