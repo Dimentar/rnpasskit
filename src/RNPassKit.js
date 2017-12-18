@@ -5,23 +5,28 @@ import PropTypes from 'prop-types';
 let RNPassKitBridge = NativeModules.RNPassKit;
 
 export default class RNPassKit {
-    canMakePayments = RNPassKitBridge.canMakePayments;
+    static canMakePayments: PropTypes.bool = RNPassKitBridge.canMakePayments;
 
-    prepareRequest() {
-        RNPassKitBridge.prepareRequest();
+    static canMakePaymentsWith(networks, callback) {
+        RNPassKitBridge.prepareRequest(networks, callback);
     }
 
-    present() {
+    static prepareRequest(args, callback) {
+        RNPassKitBridge.prepareRequest(args, callback);
+    }
+
+    static present() {
         RNPassKitBridge.present();
     }
 
-    openPaymentSetup() {
+    static openPaymentSetup() {
         RNPassKitBridge.openPaymentSetup();
     }
 }
 
 RNPassKit.propTypes = {
-    canMakePayments: bool,
+    canMakePayments: PropTypes.bool,
+    canMakePaymentsWith: PropTypes.func,
     prepareRequest: PropTypes.func,
     present: PropTypes.func,
     openPaymentSetup: PropTypes.func,
