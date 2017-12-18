@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B4B97EDE1FE18D5A00694ED2 /* RNPassKitBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B97EDC1FE18D5A00694ED2 /* RNPassKitBridge.m */; };
 		B4B97EDF1FE18D5A00694ED2 /* RNPassKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B97EDD1FE18D5A00694ED2 /* RNPassKit.swift */; };
+		B4FB0F4E1FE7F33500BE129A /* RNPaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB0F4C1FE7F33500BE129A /* RNPaymentButton.swift */; };
+		B4FB0F4F1FE7F33500BE129A /* RNPaymentButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B4FB0F4D1FE7F33500BE129A /* RNPaymentButtonManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +18,8 @@
 		B4B97ECF1FE149B700694ED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4B97EDC1FE18D5A00694ED2 /* RNPassKitBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPassKitBridge.m; sourceTree = "<group>"; };
 		B4B97EDD1FE18D5A00694ED2 /* RNPassKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNPassKit.swift; sourceTree = "<group>"; };
+		B4FB0F4C1FE7F33500BE129A /* RNPaymentButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNPaymentButton.swift; sourceTree = "<group>"; };
+		B4FB0F4D1FE7F33500BE129A /* RNPaymentButtonManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPaymentButtonManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +54,8 @@
 			children = (
 				B4B97EDD1FE18D5A00694ED2 /* RNPassKit.swift */,
 				B4B97EDC1FE18D5A00694ED2 /* RNPassKitBridge.m */,
+				B4FB0F4C1FE7F33500BE129A /* RNPaymentButton.swift */,
+				B4FB0F4D1FE7F33500BE129A /* RNPaymentButtonManager.m */,
 				B4B97ECF1FE149B700694ED2 /* Info.plist */,
 			);
 			path = RNPassKit;
@@ -134,8 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4FB0F4F1FE7F33500BE129A /* RNPaymentButtonManager.m in Sources */,
 				B4B97EDE1FE18D5A00694ED2 /* RNPassKitBridge.m in Sources */,
 				B4B97EDF1FE18D5A00694ED2 /* RNPassKit.swift in Sources */,
+				B4FB0F4E1FE7F33500BE129A /* RNPaymentButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

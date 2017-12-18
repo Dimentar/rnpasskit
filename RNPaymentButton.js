@@ -20,8 +20,12 @@ export default class RNPaymentButton extends React.Component {
 }
 
 RNPaymentButton.propTypes = {
-    type: PropTypes.string,
-    colorStyle: PropTypes.string,
+    type: PropTypes.oneOf([
+        'plain', 'buy', 'setUp', 'inStore', 'donate'
+    ]),
+    colorStyle: PropTypes.oneOf([
+        'white', 'whiteOutline', 'black'
+    ]),
     onTouchUpInside: PropTypes.func
 };
 
