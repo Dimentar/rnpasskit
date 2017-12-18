@@ -7,8 +7,7 @@
 
 #import <PassKit/PassKit.h>
 #import <React/RCTViewManager.h>
-
-@class RNPaymentButton;
+#import <RNPassKit/RNPassKit-Swift.h>
 
 @implementation RCTConvert (PKPaymentButton)
 

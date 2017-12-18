@@ -10,7 +10,7 @@ import UIKit
 import PassKit
 import React
 
-@objc
+@objc(RNPaymentButton)
 open class RNPaymentButton: UIView {
     var paymentButton: PKPaymentButton!
     var type: PKPaymentButtonType = .buy
