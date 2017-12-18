@@ -7,7 +7,7 @@ export type RNPaymentButtonStyle = 'white' | 'whiteOutline' | 'black'
 export interface RNPaymentButtonProps {
     type: RNPaymentButtonType
     colorStyle: RNPaymentButtonStyle
-    onTouchUpInside: Function
+    onTouchUpInside?: Function
     /**
      * Additional styling for Button
      */
