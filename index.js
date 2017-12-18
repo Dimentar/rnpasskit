@@ -1,1 +1,4 @@
-var RNPaymentButton = require('./RNPaymentButton');
+
+module.exports = {
+    get RNPaymentButton() { return require('./RNPaymentButton').default; }
+};

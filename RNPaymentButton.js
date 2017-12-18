@@ -1,8 +1,10 @@
+'use strict';
+
 import PropTypes from 'prop-types';
 import React from 'react'
 import { requireNativeComponent } from 'react-native'
 
-class RNPaymentButton extends React.Component {
+export default class RNPaymentButton extends React.Component {
     _onTouchUpInside = (event) => {
         if (!this.props.onTouchUpInside) {
             return;
@@ -25,5 +27,3 @@ RNPaymentButton.propTypes = {
 
 // requireNativeComponent automatically resolves 'RNPaymentButton' to 'RNPaymentButtonManager'
 let RNPaymentButtonIOS = requireNativeComponent('RNPaymentButton', RNPaymentButton);
-
-module.exports = RNPaymentButton;
