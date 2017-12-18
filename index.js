@@ -1,0 +1,1 @@
+var RNPaymentButton = require('./RNPaymentButton');

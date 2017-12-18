@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.author          = { "Alex Moisei" => "dimentar@gmail.com" }
   s.platform        = :ios, "9.0"
   s.source          = { :git => "https://github.com/Dimentar/ynpasskit.git", :tag => "#{s.version}" }
-  s.source_files    = 'RNPassKit/*.{h,m,swift}'
+  s.source_files    = 'ios/RNPassKit/*.{h,m,swift}'
 
   s.dependency 'React'
 
