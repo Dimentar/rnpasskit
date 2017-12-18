@@ -1,16 +1,16 @@
 {
   "name": "react-native-passkit",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A react-native wrapper for PassKit.",
   "author": {
     "name": "Alex Moisei",
     "email": "dimentar@gmail.com",
-    "url": "https://github.com/Dimentar/ynpasskit"
+    "url": "https://github.com/Dimentar/rnpasskit"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Dimentar/ynpasskit.git"
+    "url": "https://github.com/Dimentar/rnpasskit.git"
   },
   "keywords": [
     "react",
