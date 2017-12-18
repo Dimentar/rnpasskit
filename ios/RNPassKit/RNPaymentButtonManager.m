@@ -16,8 +16,8 @@ RCT_ENUM_CONVERTER(PKPaymentButtonType, (
        @"plain": @(PKPaymentButtonTypePlain),
        @"buy": @(PKPaymentButtonTypeBuy),
        @"setUp": @(PKPaymentButtonTypeSetUp),
-       //       @"inStore": @(PKPaymentButtonTypeInStore),
-       //       @"donate": @(PKPaymentButtonTypeDonate),
+       @"inStore": @(PKPaymentButtonTypeInStore),
+       @"donate": @(PKPaymentButtonTypeDonate),
        }), PKPaymentButtonTypeBuy, integerValue)
 
 RCT_ENUM_CONVERTER(PKPaymentButtonStyle, (

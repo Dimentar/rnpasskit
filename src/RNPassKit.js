@@ -7,8 +7,8 @@ let RNPassKitBridge = NativeModules.RNPassKit;
 export default class RNPassKit {
     static canMakePayments: PropTypes.bool = RNPassKitBridge.canMakePayments;
 
-    static canMakePaymentsWith(networks, callback) {
-        RNPassKitBridge.prepareRequest(networks, callback);
+    static canMakePaymentsUsingNetworks(networks, callback) {
+        RNPassKitBridge.canMakePaymentsUsingNetworks(networks, callback);
     }
 
     static prepareRequest(args, callback) {

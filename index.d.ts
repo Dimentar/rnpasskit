@@ -35,7 +35,7 @@ export interface PrepareRequestProps {
 
 export class RNPassKit {
     static canMakePayments: boolean;
-    static canMakePaymentsWith(supportedPaymentNetworks: Array<PKPaymentNetwork>, callback: (response: Array<any>) => void): Function;
+    static canMakePaymentsUsingNetworks(supportedPaymentNetworks: Array<PKPaymentNetwork>, callback: (error: any, can: boolean) => void): Function;
     static prepareRequest(options: PrepareRequestProps, callback: (response: Array<any>) => void): Function;
     static present(): Function;
     static openPaymentSetup(): Function;
