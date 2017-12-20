@@ -1,4 +1,6 @@
+'use strict';
 
 module.exports = {
-    get RNPaymentButton() { return require('./RNPaymentButton').default; }
+    get RNPassKit() { return require('./src/RNPassKit').default; },
+    get RNPaymentButton() { return require('./src/RNPaymentButton').default; }
 };
