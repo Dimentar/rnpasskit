@@ -21,6 +21,7 @@
     "wallet"
   ],
   "main": "index.js",
+  "scripts": {},
   "devDependencies": {
     "react": "^16.2.0",
     "react-native": "^0.51.0",
@@ -28,5 +29,9 @@
     "@types/jest": "latest",
     "@types/react": "latest",
     "@types/react-native": "latest"
+  },
+  "dependencies": {},
+  "jest": {
+    "preset": "react-native"
   }
 }

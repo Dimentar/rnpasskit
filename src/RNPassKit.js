@@ -26,7 +26,7 @@ export default class RNPassKit {
 
 RNPassKit.propTypes = {
     canMakePayments: PropTypes.bool,
-    canMakePaymentsWith: PropTypes.func,
+    canMakePaymentsUsingNetworks: PropTypes.func,
     prepareRequest: PropTypes.func,
     present: PropTypes.func,
     openPaymentSetup: PropTypes.func,
